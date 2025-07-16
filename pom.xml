@@ -68,8 +68,10 @@
 		<dependency>
     <groupId>org.postgresql</groupId>
     <artifactId>postgresql</artifactId>
-    <scope>runtime</scope>
+    <version>42.7.2</version> <!-- You can use the latest stable version -->
 </dependency>
+
+		
 	</dependencies>
 
 	<build>
