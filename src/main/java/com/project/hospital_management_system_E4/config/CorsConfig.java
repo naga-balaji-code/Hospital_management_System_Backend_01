@@ -15,7 +15,7 @@ public class CorsConfig {
                 registry.addMapping("/**")
                         .allowedOrigins(
                             "http://localhost:5176",            // ✅ Local frontend
-                            "https://your-frontend.netlify.app" // ✅ Netlify frontend (replace after deploy)
+                            "https://hospital-management-system-frontend-0.netlify.app" // ✅ Netlify frontend (replace after deploy)
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");

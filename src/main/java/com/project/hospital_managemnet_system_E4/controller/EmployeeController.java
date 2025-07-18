@@ -18,7 +18,8 @@ import com.project.hospital_managemnet_system_E4.dto.Employee;
 import com.project.hospital_managemnet_system_E4.service.EmployeeService;
 import com.project.hospital_managemnet_system_E4.util.ResponseStructure;
 @RestController
-@CrossOrigin(origins = "http://localhost:5176")
+//@CrossOrigin(origins = "http://localhost:5176")
+@CrossOrigin(origins = "*") 
 public class EmployeeController 
 {
 

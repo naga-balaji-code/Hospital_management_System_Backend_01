@@ -21,7 +21,7 @@ import com.project.hospital_managemnet_system_E4.dto.Patient;
 import com.project.hospital_managemnet_system_E4.service.BranchService;
 import com.project.hospital_managemnet_system_E4.util.ResponseStructure;
 @RestController
-@CrossOrigin(origins = "http://localhost:5176")
+@CrossOrigin(origins = "*") 
 public class BranchController {
 	@Autowired
 	BranchService branchservice;

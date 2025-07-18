@@ -26,7 +26,8 @@ import com.project.hospital_managemnet_system_E4.service.PatientService;
 import com.project.hospital_managemnet_system_E4.util.ResponseStructure;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5176")
+//@CrossOrigin(origins = "http://localhost:5176")
+@CrossOrigin(origins = "*") 
 public class PatientController 
 {
 	@Autowired

@@ -20,8 +20,8 @@ import com.project.hospital_managemnet_system_E4.dto.Hospital;
 import com.project.hospital_managemnet_system_E4.service.HospitalService;
 import com.project.hospital_managemnet_system_E4.util.ResponseStructure;
 @RestController
-@CrossOrigin(origins = "http://localhost:5176")
-
+//@CrossOrigin(origins = "*") 
+@CrossOrigin(origins = "*") 
 
 public class HospitalController 
 {
