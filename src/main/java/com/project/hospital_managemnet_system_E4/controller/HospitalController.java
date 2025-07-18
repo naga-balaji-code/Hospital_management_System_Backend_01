@@ -29,7 +29,7 @@ public class HospitalController
 HospitalService hospitalservice;
 
 @PostMapping("/saveHospital")
-	public ResponseEntity<ResponseStructure<Hospital>> saveHospital(@RequestBody Hospital hospital)
+	public ResponseEntity<ResponseStructure<Hospital>>saveHospital(@RequestBody Hospital hospital)
 	{
 		return hospitalservice.saveHospital(hospital);
 	}

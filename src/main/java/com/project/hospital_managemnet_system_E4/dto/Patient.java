@@ -2,6 +2,8 @@ package com.project.hospital_managemnet_system_E4.dto;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,12 +31,15 @@ public class Patient {
 	private Report report;
 	
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Medicine> medicines;
 	
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Encounter> encounters;
 	
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Payment> payments;
 	
 	public Room getRoom() {

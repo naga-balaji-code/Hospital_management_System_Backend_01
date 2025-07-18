@@ -2,6 +2,8 @@ package com.project.hospital_managemnet_system_E4.dto;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -25,10 +27,13 @@ public class Branch {
 	private Address address;
 	
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Employee> employees;
 	
 	@OneToMany(cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Patient> patients;
+	
 	
 	@OneToOne(cascade = CascadeType.ALL)
 	private BranchHead branchHead;
