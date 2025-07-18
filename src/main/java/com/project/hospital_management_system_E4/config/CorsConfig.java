@@ -13,10 +13,11 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins(
-                            "http://localhost:5176",            // ✅ Local frontend
-                            "https://hospital-management-system-frontend-0.netlify.app" // ✅ Netlify frontend (replace after deploy)
-                        )
+                .allowedOrigins("*")
+//                        .allowedOrigins(
+//                            "http://localhost:5176",            // ✅ Local frontend
+//                            "https://hospital-management-system-frontend-0.netlify.app " // ✅ Netlify frontend (replace after deploy)
+//                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*");
             }
